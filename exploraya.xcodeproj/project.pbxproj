@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		5F486BA22A05F6DA0056EA44 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F486BA12A05F6DA0056EA44 /* SignInViewController.swift */; };
 		5F486BA72A05F6EF0056EA44 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F486BA62A05F6EF0056EA44 /* SignUpViewController.swift */; };
+		5F5DBD742A11A9CA003188DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5DBD732A11A9CA003188DE /* HomeViewController.swift */; };
+		5F5DBD792A11A9F3003188DE /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5DBD782A11A9F3003188DE /* FavoritesViewController.swift */; };
+		5F5DBD7E2A11AA11003188DE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5DBD7D2A11AA11003188DE /* ProfileViewController.swift */; };
+		5F5DBD832A11AA67003188DE /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5DBD822A11AA67003188DE /* LoginNavigationController.swift */; };
+		5F5DBD882A11AE24003188DE /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5DBD872A11AE24003188DE /* MainTabBarViewController.swift */; };
 		5F67707A2A04C2FD00F9BE92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6770792A04C2FD00F9BE92 /* AppDelegate.swift */; };
 		5F67707C2A04C2FD00F9BE92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F67707B2A04C2FD00F9BE92 /* SceneDelegate.swift */; };
 		5F67707E2A04C2FD00F9BE92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F67707D2A04C2FD00F9BE92 /* ViewController.swift */; };
@@ -40,6 +45,11 @@
 /* Begin PBXFileReference section */
 		5F486BA12A05F6DA0056EA44 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		5F486BA62A05F6EF0056EA44 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		5F5DBD732A11A9CA003188DE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5F5DBD782A11A9F3003188DE /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		5F5DBD7D2A11AA11003188DE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5F5DBD822A11AA67003188DE /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
+		5F5DBD872A11AE24003188DE /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		5F6770762A04C2FD00F9BE92 /* exploraya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exploraya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F6770792A04C2FD00F9BE92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F67707B2A04C2FD00F9BE92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +125,11 @@
 				5F6770822A04C2FD00F9BE92 /* exploraya.xcdatamodeld */,
 				5F486BA12A05F6DA0056EA44 /* SignInViewController.swift */,
 				5F486BA62A05F6EF0056EA44 /* SignUpViewController.swift */,
+				5F5DBD732A11A9CA003188DE /* HomeViewController.swift */,
+				5F5DBD782A11A9F3003188DE /* FavoritesViewController.swift */,
+				5F5DBD7D2A11AA11003188DE /* ProfileViewController.swift */,
+				5F5DBD822A11AA67003188DE /* LoginNavigationController.swift */,
+				5F5DBD872A11AE24003188DE /* MainTabBarViewController.swift */,
 			);
 			path = exploraya;
 			sourceTree = "<group>";
@@ -268,10 +283,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F486BA72A05F6EF0056EA44 /* SignUpViewController.swift in Sources */,
+				5F5DBD832A11AA67003188DE /* LoginNavigationController.swift in Sources */,
 				5F67707E2A04C2FD00F9BE92 /* ViewController.swift in Sources */,
+				5F5DBD882A11AE24003188DE /* MainTabBarViewController.swift in Sources */,
+				5F5DBD792A11A9F3003188DE /* FavoritesViewController.swift in Sources */,
 				5F67707A2A04C2FD00F9BE92 /* AppDelegate.swift in Sources */,
 				5F67707C2A04C2FD00F9BE92 /* SceneDelegate.swift in Sources */,
 				5F486BA22A05F6DA0056EA44 /* SignInViewController.swift in Sources */,
+				5F5DBD7E2A11AA11003188DE /* ProfileViewController.swift in Sources */,
+				5F5DBD742A11A9CA003188DE /* HomeViewController.swift in Sources */,
 				5F6770842A04C2FD00F9BE92 /* exploraya.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

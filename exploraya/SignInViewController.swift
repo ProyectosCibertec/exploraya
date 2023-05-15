@@ -12,4 +12,9 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func loginTapped(_ sender: Any) {
+        let mainTabBarViewController = storyboard?.instantiateViewController(identifier: "MainTabBarViewController") as! MainTabBarViewController
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.window?.rootViewController = mainTabBarViewController
+    }
 }

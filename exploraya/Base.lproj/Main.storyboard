@@ -11,7 +11,7 @@
         <!--Registro-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignUpViewController" customModule="exploraya" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SignUpViewController" customModule="exploraya" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,7 +142,7 @@
         <!--Item-->
         <scene sceneID="Fsy-od-Xng">
             <objects>
-                <viewController id="RzT-pf-LrV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RzT-pf-LrV" customClass="HomeViewController" customModule="exploraya" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T2V-Cs-Pj2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EHH-Dz-Xl1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3365.217391304348" y="44.866071428571423"/>
+            <point key="canvasLocation" x="3433" y="-704"/>
         </scene>
         <!--Inicio de sesion-->
         <scene sceneID="K8g-35-I9N">
@@ -223,6 +223,9 @@
                                 <state key="normal" title="INICIAR SESION">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginTapped:" destination="F6c-0L-Cdy" eventType="touchUpInside" id="fYi-rE-BR3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No tienes una cuenta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgj-3t-9XH">
                                 <rect key="frame" x="44" y="638" width="212" height="27"/>
@@ -267,10 +270,10 @@
             </objects>
             <point key="canvasLocation" x="1713.0434782608697" y="44.866071428571423"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar View Controller-->
         <scene sceneID="EL7-Mg-alW">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sHZ-yd-zTq" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sHZ-yd-zTq" customClass="MainTabBarViewController" customModule="exploraya" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="69W-dt-fvr">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -279,16 +282,50 @@
                     </tabBar>
                     <connections>
                         <segue destination="RzT-pf-LrV" kind="relationship" relationship="viewControllers" id="dwC-rG-OPA"/>
+                        <segue destination="SMV-zZ-mZa" kind="relationship" relationship="viewControllers" id="VDk-0a-E3K"/>
+                        <segue destination="DdJ-1h-yfY" kind="relationship" relationship="viewControllers" id="if5-HH-8eU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ADq-rh-JLn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2492.753623188406" y="44.866071428571423"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
+        <scene sceneID="d80-6L-Oi1">
+            <objects>
+                <viewController storyboardIdentifier="FavoritesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SMV-zZ-mZa" customClass="FavoritesViewController" customModule="exploraya" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hL4-jE-X9b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="p42-cg-ns4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="w8z-Y3-WHO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6pW-gK-8AD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3432" y="45"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="pCo-TW-1oS">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DdJ-1h-yfY" customClass="ProfileViewController" customModule="exploraya" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sGM-u9-Gt6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OA7-5I-dgc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="lcr-ov-646"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TId-BI-YZV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3432" y="741"/>
+        </scene>
+        <!--Login Navigation Controller-->
         <scene sceneID="eQz-7V-NIU">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wUm-EJ-bZq" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wUm-EJ-bZq" customClass="LoginNavigationController" customModule="exploraya" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Jrw-jl-NfD"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IjR-dP-gHg">
