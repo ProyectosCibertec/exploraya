@@ -23,6 +23,7 @@
 		5F6770892A04C30000F9BE92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6770872A04C30000F9BE92 /* LaunchScreen.storyboard */; };
 		5F6770942A04C30000F9BE92 /* explorayaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6770932A04C30000F9BE92 /* explorayaTests.swift */; };
 		5F67709F2A04C30000F9BE92 /* explorayaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F67709E2A04C30000F9BE92 /* explorayaUITests.swift */; };
+		B78773692A196E8600D663F3 /* PackageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78773682A196E8600D663F3 /* PackageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		5F67709A2A04C30000F9BE92 /* explorayaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = explorayaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F67709E2A04C30000F9BE92 /* explorayaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = explorayaUITests.swift; sourceTree = "<group>"; };
 		5F6770A02A04C30000F9BE92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B78773682A196E8600D663F3 /* PackageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				5F5DBD7D2A11AA11003188DE /* ProfileViewController.swift */,
 				5F5DBD822A11AA67003188DE /* LoginNavigationController.swift */,
 				5F5DBD872A11AE24003188DE /* MainTabBarViewController.swift */,
+				B78773682A196E8600D663F3 /* PackageTableViewCell.swift */,
 			);
 			path = exploraya;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				5F5DBD832A11AA67003188DE /* LoginNavigationController.swift in Sources */,
 				5F67707E2A04C2FD00F9BE92 /* ViewController.swift in Sources */,
 				5F5DBD882A11AE24003188DE /* MainTabBarViewController.swift in Sources */,
+				B78773692A196E8600D663F3 /* PackageTableViewCell.swift in Sources */,
 				5F5DBD792A11A9F3003188DE /* FavoritesViewController.swift in Sources */,
 				5F67707A2A04C2FD00F9BE92 /* AppDelegate.swift in Sources */,
 				5F67707C2A04C2FD00F9BE92 /* SceneDelegate.swift in Sources */,

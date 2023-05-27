@@ -7,23 +7,39 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+struct Package {
+    var name: String
+    var destiny: String
+    var price: Double
+    var pack: String
+}
 
+class HomeViewController: UIViewController, UITableViewDataSource {
+    
+    var packagesList: [Package] = []
+    
+    @IBOutlet weak var touristPackages: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        touristPackages.dataSource = self
+        packagesList.append(Package(name: "Paquete 1", destiny: "Francia", price: 233, pack: "viaje"))
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func openAddModal(_ sender: Any) {
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return packagesList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "packageCell", for: indexPath) as! PackageTableViewCell
+        let package = packagesList[indexPath.row]
+        cell.packageNameLabel.text = package.name
+        cell.packageDestinyLabel.text = package.destiny
+        cell.packagePriceLabel.text = String(package.price)
+        cell.packagePackLabel.text = package.destiny
+        return cell
+    }
 }
