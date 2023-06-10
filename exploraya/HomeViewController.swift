@@ -26,6 +26,48 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         packagesList.append(Package(name: "Paquete 1", destiny: "Francia", price: 233, pack: "viaje"))
     }
     
+    @IBAction func openRegistryAlert(_ sender: Any) {
+        var nametxt = UITextField()
+        var destinytxt = UITextField()
+        var pricetxt = UITextField()
+        var packtxt = UITextField()
+        let alert = UIAlertController(title: "Registrar", message: "Completa todos los datos", preferredStyle: .alert)
+        alert.addTextField { alertTextField in
+            alertTextField.placeholder = "Ingresa un nombre"
+            nametxt = alertTextField
+        }
+        alert.addTextField { alertTextField in
+            alertTextField.placeholder = "Ingresa un destino"
+            destinytxt = alertTextField
+        }
+        alert.addTextField { alertTextField in
+            alertTextField.placeholder = "Ingresa un precio"
+            pricetxt = alertTextField
+        }
+        alert.addTextField { alertTextField in
+            alertTextField.placeholder = "Ingresa un pack"
+            packtxt = alertTextField
+        }
+        let action = UIAlertAction(title: "Registrar", style: .default, handler: {action in
+            let name = nametxt.text
+            let destiny = destinytxt.text
+            let price = pricetxt.text
+            let pack = packtxt.text
+            self.registerPack(name: name, destiny: destiny, price: Double(price!), pack: pack)
+        })
+        alert.addAction(action)
+        alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func registerPack(name: String?, destiny: String?, price: Double?, pack: String?) {
+        if let name = name, let destiny = destiny, let price = price, let pack = pack {
+            let package =  Package(name: name, destiny: destiny, price: price, pack: pack)
+            packagesList.append(package)
+            touristPackages.reloadData()
+        }
+    }
+    
     @IBAction func openAddModal(_ sender: Any) {
     }
     
